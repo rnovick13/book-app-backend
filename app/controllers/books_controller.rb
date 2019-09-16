@@ -3,4 +3,8 @@ class BooksController < ApplicationController
     @books = Book.all
     render json: @books
   end
+
+  def show
+
+  end
 end

@@ -3,4 +3,8 @@ class ReviewsController < ApplicationController
     @reviews = Review.all
     render json: @reviews
   end
+
+  def create
+
+  end
 end
