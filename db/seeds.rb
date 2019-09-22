@@ -89,3 +89,9 @@ marschron = Book.create(title: "The Martian Chronicles", author_id: 6, cover: "h
 illustrated = Book.create(title: "The Illustrated Man", author_id: 6, cover: "https://images-na.ssl-images-amazon.com/images/I/51fRL1sEdJL.jpg")
 faren = Book.create(title: "Farenheit 451", author_id: 6, cover: "https://images-na.ssl-images-amazon.com/images/I/71OFqSRFDgL.jpg")
 rocket = Book.create(title: "R is for Rocket", author_id: 6, cover: "https://images-na.ssl-images-amazon.com/images/I/51qsct9meYL._SX308_BO1,204,203,200_.jpg")
+
+review1 = Review.create(book_id: 2, name: "Rachel", body: "A fantastic look at what happens when gods are no longer worshipped.")
+review2 = Review.create(book_id: 4, name: "Rachel", body: "I love dinosaurs.")
+review3 = Review.create(book_id: 5, name: "Rachel", body: "Peter is a real jerk.")
+review4 = Review.create(book_id: 8, name: "Rachel", body: "Terrifying read about one of America's most notorious serial killers.")
+review5 = Review.create(book_id: 33, name: "Rachel", body: "I've read this a hundred times and it is still one of my favorite books.")
