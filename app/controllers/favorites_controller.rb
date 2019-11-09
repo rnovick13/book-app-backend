@@ -10,11 +10,11 @@ class FavoritesController < ApplicationController
   end
 
   def show
-
+    @favorite = Favorite.find(params[:book_id])
   end
 
   def delete
-    
+    @favorite.destroy
   end
 
   private

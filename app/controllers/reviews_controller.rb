@@ -4,9 +4,17 @@ class ReviewsController < ApplicationController
     render json: @reviews
   end
 
+  def show
+    @review = Review.find(params[:book_id])
+  end
+
   def create
     @review = Review.create(review_params)
     render json: @review
+  end
+
+  def delete
+    @review.destroy
   end
 
   private
