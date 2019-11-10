@@ -96,3 +96,8 @@ review3 = Review.create(book_id: 5, name: "Rachel", body: "Peter is a real jerk.
 review4 = Review.create(book_id: 8, name: "Rachel", body: "Terrifying read about one of America's most notorious serial killers.")
 review5 = Review.create(book_id: 33, name: "Rachel", body: "I've read this a hundred times and it is still one of my favorite books.")
 review6 = Review.create(book_id: 4, name: "Jeff", body: "Life uh finds a way.")
+
+
+favorite1 = Favorite.create(book_id: 1)
+favorite2 = Favorite.create(book_id: 3)
+favorite3 = Favorite.create(book_id: 12)
