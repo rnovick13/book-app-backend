@@ -14,6 +14,7 @@ class FavoritesController < ApplicationController
   end
 
   def delete
+    @favorite = Favorite.find(params[:id])
     @favorite.destroy
   end
 
