@@ -5,7 +5,10 @@ class BooksController < ApplicationController
   end
 
   def show
-    @book = Book.find(params[:id])
-    render json: @book
+    book = Book.find_by(id: params[:id])
+    options = {
+      include: [:author]
+    }
+    render json: BookSerializer.new(book, options)
   end
 end

@@ -5,8 +5,11 @@ class ReviewsController < ApplicationController
   end
 
   def show
-    @review = Review.find_by(params[:id])
-    render json: ReviewSerializer.new(@review)
+    review = Review.find_by(id: params[:id])
+    options = {
+      include: [:book_id]
+    }
+    render json: ReviewSerializer.new(review)
   end
 
   def create
