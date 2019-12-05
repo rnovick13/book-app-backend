@@ -10,7 +10,11 @@ class FavoritesController < ApplicationController
   end
 
   def show
-    @favorite = Favorite.find(params[:book_id])
+    favorite = Favorite.find_by(id: params[:id])
+    options = {
+      include: [:book]
+    }
+    render json: FavoriteSerializer.new(favorite, options)
   end
 
   def delete
