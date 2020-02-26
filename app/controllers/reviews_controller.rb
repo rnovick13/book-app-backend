@@ -1,4 +1,7 @@
 class ReviewsController < ApplicationController
+
+  protect_from_forgery unless: -> { request.format.json? }
+  
   def index
     @reviews = Review.all
     render json: @reviews
